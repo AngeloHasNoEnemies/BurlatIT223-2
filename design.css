@@ -1,0 +1,138 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f1f1;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #34495e;
+    padding: 10px 20px;
+    color: white;
+}
+.nav-icons span {
+    margin-right: 15px;
+    cursor: pointer;
+}
+.badge {
+    background: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+/* Layout */
+.container {
+    display: flex;
+    padding: 20px;
+}
+.sidebar, .right-sidebar {
+    width: 20%;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+main {
+    flex: 1;
+    margin: 0 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-card {
+    text-align: center;
+    padding: 20px;
+}
+.avatar {
+    width: 80px;
+    height: 80px;
+    background: gray;
+    border-radius: 50%;
+    margin: auto;
+}
+
+/* Sidebar Menu */
+.sidebar-menu ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar-menu li {
+    padding: 10px;
+    background: #2c3e50;
+    color: white;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+/* Interests */
+.tags span {
+    background: #dfe6e9;
+    padding: 5px;
+    margin: 5px;
+    display: inline-block;
+    border-radius: 5px;
+}
+
+/* Status Box */
+.status-box {
+    display: flex;
+    gap: 10px;
+}
+.status-box input {
+    flex: 1;
+    padding: 10px;
+}
+.status-box button {
+    background: #2980b9;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Post */
+.post {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.post-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.post-avatar {
+    width: 40px;
+    height: 40px;
+    background: gray;
+    border-radius: 50%;
+}
+.post-images img {
+    width: 48%;
+    border-radius: 5px;
+}
+.post-actions button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+/* Right Sidebar */
+.event img, .friend-request .friend-avatar {
+    width: 100%;
+    border-radius: 10px;
+}
+.friend-request button {
+    margin: 5px;
+    padding: 5px 10px;
+}
