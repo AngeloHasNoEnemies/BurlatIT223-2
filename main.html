@@ -3,89 +3,153 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Social Media Profile</title>
-    <link rel="stylesheet" href="design.css"> 
+    <title>Social Media Page</title>
+    <link rel="stylesheet" href="design.css">
 </head>
 <body>
-    <div class="navbar">
+    <nav class="navbar">
         <div class="logo">Logo</div>
         <div class="nav-icons">
             <span>🏠</span>
-            <span>🔔<span class="badge">3</span></span>
-            <span>✉️</span>
-            <span>⚙️</span>
-            <span class="profile-pic"></span>
+            <span>📩</span>
+            <span class="profile-icon">👤</span>
         </div>
-    </div>
+        <div class="nav-icons">
+            <span class="notification-icon">🔔</span>
+            <div class="notification-dropdown">
+                <p>Ilove you</p>
+            </div>
+        </div>
+        
+    </nav>
     
     <div class="container">
-        <!-- Sidebar -->
+
         <aside class="sidebar">
             <div class="profile-card">
-                <div class="avatar"></div>
+                <div class="avatar">
+                   <img src="images\myprofile.jpg" class="avatar" alt="my profile">
+                </div> 
                 <h3>My Profile</h3>
                 <p>Designer, UI</p>
                 <p>London, UK</p>
                 <p>April 1, 1988</p>
             </div>
             <nav class="sidebar-menu">
-                <ul>
-                    <li>My Groups</li>
-                    <li>My Events</li>
-                    <li>My Photos</li>
+                <ul class="sidebar-menu">
+                    <li>My Groups
+                        <ul class="submenu">
+                            <li>Group 1</li>
+                            <li>Group 2</li>
+                        </ul>
+                    </li>
+                    <li>My Events
+                        <ul class="submenu">
+                            <li>Event 1</li>
+                            <li>Event 2</li>
+                        </ul>
+                    </li>
+                    <li>My Photos
+                        <ul class="submenu">
+                            <li>Photo 1</li>
+                            <li>Photo 2</li>
+                        </ul>
+                    </li>
                 </ul>
+                
             </nav>
+
             <div class="interests">
-                <h4>Interests</h4>
-                <div class="tags">
-                    <span>News</span>
-                    <span>W3Schools</span>
-                    <span>Games</span>
-                    <span>Friends</span>
-                </div>
+                <h3>Interests</h3>
+                <span>Video Games</span>
+                <span>TV Shows</span>
+                <span>Movies</span>
             </div>
+            
         </aside>
-        
+
 
         <main>
             <div class="status-box">
-                <input type="text" placeholder="Status: Feeling Blue">
+                <input type="text" placeholder="What's on your mind?">
                 <button>Post</button>
             </div>
-            <div class="post">
-                <div class="post-header">
-                    <div class="post-avatar"></div>
-                    <span>John Doe</span>
-                    <span class="time">1 min</span>
+            
+            <div class="feed">
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="images\manuel.jpg" alt="Profile Picture" class="post-avatar">
+                        <h3>Manuel Tongco</h3>
+                    </div>
+                    <p>@ lawesbra</p>
+                    <div class="post-images">
+                        <img src="images\lawesbra.jpg" alt="Post Image">
+                    </div>
+                    <div class="post-actions">
+                        <button class="like-btn">Like</button>
+                        <button class="comment-btn">Comment</button>
+                    </div>
                 </div>
-                <p>Lorem ipsum dolor sit amet...</p>
-                <div class="post-images">
-                    <img src="aurora.jpg" alt="Aurora">
-                    <img src="mountain.jpg" alt="Mountain">
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="images\lloyd.jpg" alt="Profile Picture" class="post-avatar">
+                        <h3>Lloyd</h3>
+                    </div>
+                    <p>Hello Baby Girls! Chat me for a good time!</p>
+                    <p>#IwillAlwaysLoveYou</p>
+                    <div class="post-actions">
+                        <button class="like-btn">Like</button>
+                        <button class="comment-btn">Comment</button>
+                    </div>
                 </div>
-                <div class="post-actions">
-                    <button>Like</button>
-                    <button>Comment</button>
+
+                <div class="post">
+                    <div class="post-header">
+                        <img src="images\joshy.png" alt="Profile Picture" class="post-avatar">
+                        <h3>Josh Jaraula</h3>
+                    </div>
+                    <p>going bro!</p>
+                    <div class="post-images">
+                        <img src="images\vrom.jpg" alt="Post Image">
+                    </div>
+                    <div class="post-actions">
+                        <button class="like-btn">Like</button>
+                        <button class="comment-btn">Comment</button>
+                    </div>
                 </div>
+
             </div>
         </main>
         
 
         <aside class="right-sidebar">
-            <div class="event">
-                <h4>Upcoming Events:</h4>
-                <img src="event.jpg" alt="Event">
-                <p><b>Holiday</b><br>Friday 15:00</p>
+            <section class="event">
+                <h3>Upcoming Events:</h3>
+                <img src="" alt="Event Image"> 
+                <p><strong>Holiday</strong></p>
+                <p>Friday 15:00</p>
                 <button>Info</button>
-            </div>
-            <div class="friend-request">
-                <h4>Friend Request</h4>
-                <div class="friend-avatar"></div>
-                <p>Jane Doe</p>
-                <button>✔️</button>
-                <button>❌</button>
-            </div>
+            </section>
+            <section class="friend-request">
+                <h3>Friend Request</h3>
+                <div class="avatar" >
+                    <img src="images\Manuel_Tongco.jpg" class="avatar" alt="manuel">
+                </div> 
+                
+                <p>Manuel Tongco</p>
+                <button class="accept-btn">✔ Accept</button>
+                <button class="decline-btn">✖ Decline</button>
+            </section>
         </aside>
+        <div class="ad-section">
+            <span class="close-ad">X</span>
+            <p>Your Ad Here</p>
+        </div>
+        
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
